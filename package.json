@@ -1,0 +1,47 @@
+{
+    "name": "customer-api",
+    "version": "1.0.0",
+    "description": "Customer CRUD Lambda function",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests specified\" && exit 0",
+        "deploy": "sam deploy --guided"
+    },
+    "keywords": [
+        "AWS",
+        "Lambda",
+        "TypeScript",
+        "SAM"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+        "@prisma/client": "^4.15.0",
+        "@types/aws-lambda": "^8.10.119",
+        "aws-lambda": "^1.0.6",
+        "aws-sdk": "^2.1398.0",
+        "csv-parser": "^3.0.0",
+        "esbuild": "^0.18.4",
+        "joi": "^17.9.2",
+        "source-map-support": "^0.5.16",
+        "ts-node": "^10.9.1",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.92",
+        "@types/jest": "^29.4.0",
+        "@types/node": "^17.0.13",
+        "@types/uuid": "^9.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.10.2",
+        "@typescript-eslint/parser": "^5.10.2",
+        "eslint": "^8.8.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "jest": "^29.3.1",
+        "prettier": "^2.5.1",
+        "ts-jest": "^29.0.5",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.5"
+    }
+}

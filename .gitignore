@@ -1,0 +1,17 @@
+node_modules
+.env
+.aws-sam
+.aws-sam/build/**
+dist
+# Ignore AWS SAM build artifacts
+.sam/
+
+# Ignore deployment build artifacts
+.build/
+
+# Ignore local development environment files
+.env
+
+
+# Ignore package-lock.json for npm projects
+package-lock.json

@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://hbsbashitha99:rzDjNbOslAROXm05@cluster0.9bze86j.mongodb.net/apiAssignmentDb?retryWrites=true&w=majority"
+}
+
+model customer {
+  id              String @id @default(auto()) @map("_id") @db.ObjectId
+  address         String
+  age             BigInt
+  email           String
+  name            String
+  phone_number    String
+  security_status String
+}
+
+model customers {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
